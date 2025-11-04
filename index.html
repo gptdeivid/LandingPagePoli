@@ -4,103 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page IPN</title>
-    <style>
-        :root {
-            --ipn-purple: #682444;
-            --ipn-white: #FFFFFF;
-            --ipn-gold: #C9B037;
-            --ipn-lightgray: #F5F5F5;
-            --ipn-black: #222222;
-        }
-        body {
-            margin: 0;
-            font-family: 'Roboto', 'Montserrat', 'Segoe UI', Arial, sans-serif;
-            background: var(--ipn-white);
-            color: var(--ipn-black);
-        }
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--ipn-purple);
-            color: var(--ipn-white);
-            z-index: 1000;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            padding: 1rem 0;
-        }
-        nav a {
-            color: var(--ipn-white);
-            text-decoration: none;
-            font-weight: bold;
-            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-            font-size: 1rem;
-            transition: color 0.2s;
-        }
-        nav a:hover {
-            color: var(--ipn-gold);
-        }
-        .hero {
-            margin-top: 80px;
-            background: var(--ipn-purple);
-            color: var(--ipn-white);
-            padding: 4rem 2rem;
-            text-align: center;
-            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-        }
-        .hero p {
-            font-size: 1.25rem;
-            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
-        }
-        section {
-            padding: 3rem 2rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .section {
-            background: var(--ipn-lightgray);
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(104,36,68,0.08);
-            margin-bottom: 2rem;
-        }
-        .section h2 {
-            font-size: 2rem;
-            color: var(--ipn-purple);
-            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-        }
-        .section p {
-            font-size: 1rem;
-            color: var(--ipn-black);
-            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
-        }
-        footer {
-            background: var(--ipn-purple);
-            color: var(--ipn-white);
-            text-align: center;
-            padding: 1.5rem 0;
-            margin-top: 2rem;
-            font-size: 1rem;
-            font-family: 'Merriweather', Georgia, serif;
-        }
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .section h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -187,21 +91,63 @@
                 </div>
             </div>
         </section>
-        <section class="section" id="seccion1">
-            <h2>Sección 1</h2>
-            <p>Contenido principal de la sección 1.</p>
+        <!-- Sobre IPN -->
+        <section class="section" id="sobre-ipn">
+            <h2>Sobre el IPN</h2>
+            <p>El Instituto Politécnico Nacional (IPN) es una de las instituciones educativas más importantes de México, reconocida por su excelencia académica, innovación tecnológica y compromiso social.</p>
+            <ul>
+                <li><strong>Formación integral</strong> con enfoque científico y tecnológico.</li>
+                <li><strong>Amplia oferta educativa</strong> y vinculación internacional.</li>
+                <li><strong>Fuerte impulso</strong> a la investigación y desarrollo social.</li>
+            </ul>
         </section>
-        <section class="section" id="seccion2">
-            <h2>Sección 2</h2>
-            <p>Contenido principal de la sección 2.</p>
+
+        <!-- Programas académicos -->
+        <section class="section" id="programas-academicos">
+            <h2>Programas académicos</h2>
+            <ul>
+                <li><strong>Media Superior:</strong> Preparatorias técnicas con orientación científica y tecnológica.</li>
+                <li><strong>Licenciatura:</strong> Carreras profesionales en ingeniería, ciencias y gestión.</li>
+                <li><strong>Posgrado:</strong> Maestrías y doctorados en áreas estratégicas para el país.</li>
+            </ul>
         </section>
-        <section class="section" id="seccion3">
-            <h2>Sección 3</h2>
-            <p>Contenido principal de la sección 3.</p>
+
+        <!-- Testimonios -->
+        <section class="section" id="testimonios">
+            <h2>Testimonios</h2>
+            <div class="testimonios">
+                <div class="testimonio">
+                    <p>“El IPN me dio las herramientas para destacar en el mundo profesional.”</p>
+                    <span>— Ana Martínez, egresada de Ingeniería</span>
+                </div>
+                <div class="testimonio">
+                    <p>“Aquí encontré una comunidad que impulsa la innovación y el trabajo en equipo.”</p>
+                    <span>— Luis Ramírez, estudiante de Licenciatura</span>
+                </div>
+                <div class="testimonio">
+                    <p>“Gracias al IPN, participé en proyectos de investigación internacional.”</p>
+                    <span>— Sofía Torres, egresada de Posgrado</span>
+                </div>
+            </div>
         </section>
-        <section class="section" id="seccion4">
-            <h2>Sección 4</h2>
-            <p>Contenido principal de la sección 4.</p>
+
+        <!-- CTAs diferenciados -->
+        <section class="section" id="ctas">
+            <h2>¿A quién va dirigido?</h2>
+            <div class="ctas">
+                <div class="cta">
+                    <span>Futuros estudiantes</span>
+                    <p>Descubre tu futuro en el IPN. ¡Conoce nuestra oferta académica!</p>
+                </div>
+                <div class="cta">
+                    <span>Padres de familia</span>
+                    <p>Asegura la mejor educación para tus hijos. Explora los beneficios del IPN.</p>
+                </div>
+                <div class="cta">
+                    <span>Egresados</span>
+                    <p>Conéctate con la comunidad IPN y potencia tu desarrollo profesional.</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

@@ -1,0 +1,135 @@
+/* Estilos principales para Landing Page IPN */
+:root {
+    --ipn-purple: #682444;
+    --ipn-white: #FFFFFF;
+    --ipn-gold: #C9B037;
+    --ipn-lightgray: #F5F5F5;
+    --ipn-black: #222222;
+    --ipn-secondary: #A86A8C;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    background: var(--ipn-white);
+    color: var(--ipn-black);
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--ipn-purple);
+    color: var(--ipn-white);
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+nav a {
+    color: var(--ipn-white);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: var(--ipn-gold);
+}
+.hero {
+    margin-top: 80px;
+    background: var(--ipn-purple);
+    color: var(--ipn-white);
+    padding: 4rem 2rem;
+    text-align: center;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+.hero p {
+    font-size: 1.25rem;
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+}
+section {
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.section {
+    background: var(--ipn-lightgray);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(104,36,68,0.08);
+    margin-bottom: 2rem;
+}
+.section h2 {
+    font-size: 2rem;
+    color: var(--ipn-purple);
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+.section p {
+    font-size: 1rem;
+    color: var(--ipn-black);
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+}
+footer {
+    background: var(--ipn-purple);
+    color: var(--ipn-white);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-family: 'Merriweather', Georgia, serif;
+}
+.testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.testimonio {
+    background: var(--ipn-secondary);
+    color: var(--ipn-white);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 280px;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(104,36,68,0.08);
+}
+.ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.cta {
+    background: var(--ipn-gold);
+    color: var(--ipn-purple);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 280px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(104,36,68,0.08);
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .section h2 {
+        font-size: 1.5rem;
+    }
+    .testimonios, .ctas {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

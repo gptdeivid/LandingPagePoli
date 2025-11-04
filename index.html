@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page IPN</title>
+    <style>
+        :root {
+            --ipn-purple: #682444;
+            --ipn-white: #fff;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--ipn-white);
+            color: var(--ipn-purple);
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--ipn-purple);
+            color: var(--ipn-white);
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem 0;
+        }
+        nav a {
+            color: var(--ipn-white);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #d1b2c7;
+        }
+        .hero {
+            margin-top: 80px;
+            background: var(--ipn-purple);
+            color: var(--ipn-white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        section {
+            padding: 3rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .section {
+            background: var(--ipn-white);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(104,36,68,0.08);
+            margin-bottom: 2rem;
+        }
+        footer {
+            background: var(--ipn-purple);
+            color: var(--ipn-white);
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#hero">Inicio</a>
+            <a href="#seccion1">Sección 1</a>
+            <a href="#seccion2">Sección 2</a>
+            <a href="#seccion3">Sección 3</a>
+            <a href="#seccion4">Sección 4</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <h1>Bienvenido al IPN</h1>
+            <p>Innovación, conocimiento y futuro para México.</p>
+        </section>
+        <section class="section" id="seccion1">
+            <h2>Sección 1</h2>
+            <p>Contenido principal de la sección 1.</p>
+        </section>
+        <section class="section" id="seccion2">
+            <h2>Sección 2</h2>
+            <p>Contenido principal de la sección 2.</p>
+        </section>
+        <section class="section" id="seccion3">
+            <h2>Sección 3</h2>
+            <p>Contenido principal de la sección 3.</p>
+        </section>
+        <section class="section" id="seccion4">
+            <h2>Sección 4</h2>
+            <p>Contenido principal de la sección 4.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Instituto Politécnico Nacional &copy; 2025. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

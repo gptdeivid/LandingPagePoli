@@ -18,6 +18,17 @@ Crear una página atractiva y funcional que sirva como punto de entrada para est
 2. Modifica `styles.css` para personalizar el diseño.
 3. Consulta la documentación en `documentacion/estrategia_landing_page_ipn.md` para detalles sobre la estrategia y objetivos.
 
+## ¿Cómo funciona la página?
+
+La página está diseñada como una landing informativa y visualmente atractiva. Al abrir `index.html` en tu navegador:
+
+- Se muestra contenido relevante sobre el Politécnico Nacional.
+- El diseño y los estilos se gestionan desde `styles.css` para asegurar una experiencia moderna y responsiva.
+- Puedes modificar el HTML para agregar secciones, imágenes o enlaces según las necesidades del proyecto.
+- La estructura es simple para facilitar la personalización y el mantenimiento.
+
+No requiere backend ni base de datos; todo el contenido es estático y se puede desplegar fácilmente en cualquier servidor web.
+
 ## Autor
 
 David Cuéllar Rueda

@@ -1,5 +1,26 @@
 # LandingPagePoli
 
+Este proyecto es una landing page para el Politécnico Nacional (IPN).
+
+## Estructura del proyecto
+
+- `index.html`: Página principal de la landing.
+- `styles.css`: Hoja de estilos para la landing page.
+- `documentacion/estrategia_landing_page_ipn.md`: Documento con la estrategia y planificación de la landing page.
+
+## Objetivo
+
+Crear una página atractiva y funcional que sirva como punto de entrada para estudiantes, docentes y visitantes del IPN.
+
+## Cómo usar
+
+1. Abre `index.html` en tu navegador para ver la landing page.
+2. Modifica `styles.css` para personalizar el diseño.
+3. Consulta la documentación en `documentacion/estrategia_landing_page_ipn.md` para detalles sobre la estrategia y objetivos.
+
+## Autor
+
+David Cuéllar Rueda
 ## Repo by David Cuellar
 Es una landing Page del IPN
 

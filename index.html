@@ -7,13 +7,16 @@
     <style>
         :root {
             --ipn-purple: #682444;
-            --ipn-white: #fff;
+            --ipn-white: #FFFFFF;
+            --ipn-gold: #C9B037;
+            --ipn-lightgray: #F5F5F5;
+            --ipn-black: #222222;
         }
         body {
             margin: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Roboto', 'Montserrat', 'Segoe UI', Arial, sans-serif;
             background: var(--ipn-white);
-            color: var(--ipn-purple);
+            color: var(--ipn-black);
         }
         header {
             position: fixed;
@@ -35,10 +38,12 @@
             color: var(--ipn-white);
             text-decoration: none;
             font-weight: bold;
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            font-size: 1rem;
             transition: color 0.2s;
         }
         nav a:hover {
-            color: #d1b2c7;
+            color: var(--ipn-gold);
         }
         .hero {
             margin-top: 80px;
@@ -46,6 +51,16 @@
             color: var(--ipn-white);
             padding: 4rem 2rem;
             text-align: center;
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
         }
         section {
             padding: 3rem 2rem;
@@ -53,10 +68,20 @@
             margin: 0 auto;
         }
         .section {
-            background: var(--ipn-white);
+            background: var(--ipn-lightgray);
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(104,36,68,0.08);
             margin-bottom: 2rem;
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: var(--ipn-purple);
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+        }
+        .section p {
+            font-size: 1rem;
+            color: var(--ipn-black);
+            font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
         }
         footer {
             background: var(--ipn-purple);
@@ -64,6 +89,16 @@
             text-align: center;
             padding: 1.5rem 0;
             margin-top: 2rem;
+            font-size: 1rem;
+            font-family: 'Merriweather', Georgia, serif;
+        }
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .section h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
